@@ -16,7 +16,7 @@ Let's create a task that prints a greeting.
 
 task printGreeting {
     doLast {
-       println greeting
+       println "greeting"
     }
 }
 
@@ -60,3 +60,5 @@ out the following section of the user guide for more info:
 https://docs.gradle.org/current/userguide/userguide_single.html#build_environment
 
 */
+awelfh 
+asldfkj 

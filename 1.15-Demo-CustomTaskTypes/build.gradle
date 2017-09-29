@@ -32,6 +32,14 @@ class HelloTask extends DefaultTask {
     }
 }
 
+class MySecondTask extends DefaultTask {
+    @TaskAction
+    void doAction() {
+        println "MyTask"
+    }
+}
+
+task testTask(type: MySecondTask)
 /*
 
 Now that we've defined our task and given it an action, we can create an

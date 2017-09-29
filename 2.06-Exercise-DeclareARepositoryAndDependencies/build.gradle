@@ -32,3 +32,10 @@ task printDependencies {
         configurations.compile.each { println it.name }
     }
 }
+repositories {
+    mavenCentral() // 1. Add Maven Central repository
+}
+dependencies {
+    compile 'commons-io:commons-io:2.5' // 2. Add commons-io dependency
+    compile fileTree(dir: 'libs', include: '*.jar') // 3. Add 'lib' directory
+}
